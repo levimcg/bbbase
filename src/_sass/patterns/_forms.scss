@@ -1,0 +1,41 @@
+/*----------------------------------------------------------
+	Forms
+	_forms.scss
+
+	Everything to do with styling forms, inputs, selects,
+	checkboxes, and radios.
+----------------------------------------------------------*/
+
+label {
+	display: inline-block;
+	font-size: .825em;
+	margin-bottom: .25em;
+	color: $color-text-medium;
+	text-transform: uppercase;
+	letter-spacing: .04em;
+	cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	border: 1px solid $color-form-borders;
+	border-radius: $radius-small;
+	display: block;
+	min-height: 48px;
+	min-width: 300px;
+	font-size: 16px;
+	padding: .5em;
+
+	&:focus {
+		outline: none;
+		border: 1px solid $color-form-borders-focus;
+	}
+}
+
+input[type="text"]:disabled,
+input[type="email"]:disabled,
+input[type="password"]:disabled {
+	background-color: $color-ruler;
+	cursor: not-allowed;
+}

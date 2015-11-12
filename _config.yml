@@ -1,5 +1,5 @@
 title: Bbbase
-description: A style guide generator using Jekyll
+description: A style guide generator built using [Jekyll](http://jekyllrb.com/) and a good place to start designing your site.
 
 # Makes for a cleaner file structure
 source: src/

@@ -12,6 +12,7 @@
 .sg-wrapper {
 	@include clear-fix;
 	height: 100%;
+	position: relative;
 }
 
 /*
@@ -40,11 +41,19 @@
 	width: 80%;
 }
 
-.sg-site-title {
+.sg-intro {
+	padding-right: 1em;
+	margin-bottom: 4em;
+}
+
+.sg-intro__title {
 	color: $color-text;
 	margin-top: 0;
-	margin-bottom: 1.5em;
-	font-size: $font-size-h4;
+	font-size: $font-size-h3;
+}
+
+.sg-intro__description {
+	color: $color-text-medium;
 }
 
 .sg-nav__list {
@@ -63,19 +72,24 @@
 		border-bottom: 1px solid $color-ruler;
 
 		&:hover {
-			text-decoration: underline;
 			background-color: $color-ruler;
 		}
 	}
 }
 
+.sg-nav__group-title {
+	font-size: $font-size-h5;
+	font-weight: 400;
+	color: $color-text-medium;
+}
+
 .sg-pattern-group {
-	padding-right: 3em;
-	padding-left: 3em;
+	padding-right: 4em;
+	padding-left: 4em;
 }
 
 .sg-pattern {
-	padding-top: 3em;
+	padding-top: 4em;
 
 	&:first-child {
 		padding-top: 0;
@@ -83,19 +97,23 @@
 }
 
 .sg-pattern-group__heading {
-	color: $color-text-subtle;
-	font-size: $font-size-h4;
+	color: $color-text-medium;
+	font-size: $font-size-h5;
+	font-weight: 400;
+	margin-top: 2.75em;
+	margin-bottom: 2.5em;
 }
 
 .sg-pattern__title {
-	background-color: $color-text;
-	color: $color-background;
+	background-color: $color-text-light;
+	color: $color-text;
 	border-top-right-radius: $radius-small;
 	border-top-left-radius: $radius-small;
 	padding: .25em .5em;
 
 	&:hover {
 		cursor: pointer;
+		background-color: $color-ruler;
 	}
 
 	&:focus {
@@ -111,7 +129,7 @@
 }
 
 /*
-**  Line numbers
+**  Line numbers on code highlighting
 */
 
 .sg-pattern__markup  .lineno {
@@ -129,10 +147,25 @@
 	border: 1px solid $color-ruler;
 	border-bottom-right-radius: $radius-small;
 	border-bottom-left-radius: $radius-small;
+}
 
-	* {
-		margin: 0;
+/*
+**	We'll get rid of the top and bottom margin on all the
+**	example headings here for presentation purposes.
+*/
+
+.sg-pattern__example  {
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin-top: 0;
+		margin-bottom: 0;
 	}
+
 }
 
 .sg-swatches {
@@ -147,7 +180,7 @@
 	margin-bottom: 1em;
 	width: 33.3333%;
 	padding-right: 1.5em;
-	padding-bottom: 1.5em;
+	padding-bottom: 2em;
 	padding-left: 1.5em;
 }
 
@@ -173,7 +206,7 @@
 	}
 
 	dt {
-		color: $color-text-subtle;
+		color: $color-text-medium;
 		font-size: .875em;
 		line-height: 1;
 		text-transform: uppercase;

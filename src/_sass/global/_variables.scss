@@ -1,9 +1,15 @@
-// Typography defaults
+// ---------------------------------------------------------
+//
+//		Typography
+//
+// ---------------------------------------------------------
+
+// Defaults
 $base-font-size: 100%;
 $base-font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
 $heading-font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
 
-//Font sizes
+// Font sizes
 $font-size-h1: 3.615em;
 $font-size-h2: 3.052em;
 $font-size-h3: 2.441em;
@@ -16,30 +22,49 @@ $font-weight-bold: 700;
 $font-weight-regular: 400;
 $font-weight-light: 300;
 
-// Colors
+// ---------------------------------------------------------
+//
+//		Colors
+//
+// ---------------------------------------------------------
+
 $color-background: #fff;
 $color-background-subtle: mix(black, $color-background, 2%);
 $color-ruler: mix(black, $color-background, 10%);
 
 $color-text: #313b52;
-$color-text-subtle: mix(white, $color-text, 50%);
+$color-text-medium: mix(white, $color-text, 50%);
+$color-text-light: mix(white, $color-text, 85%);
 
-$color-primary: #6291ff;
-$color-primary-middle: mix(white, $color-primary, 40%);
+$color-primary: #398fea;
+$color-primary-medium: mix(white, $color-primary, 40%);
 $color-primary-light: mix(white, $color-primary, 85%);
+$color-primary-darken: mix($color-primary, black, 80%);
 
-$color-secondary: #7ce8b3;
-$color-secondary-middle: mix(white, $color-secondary, 40%);
+$color-secondary: #24bf79;
+$color-secondary-medium: mix(white, $color-secondary, 40%);
 $color-secondary-light: mix(white, $color-secondary, 85%);
+$color-secondary-darken: mix($color-secondary, black, 80%);
 
-$color-link: #2b48ff;
-$color-quiet: #bbb;
+$color-form-borders: mix($color-text, white, 40%);
+$color-form-borders-focus: mix($color-text, white, 85%);
+
+// ---------------------------------------------------------
+//
+//		Breakpoints
+//
+// ---------------------------------------------------------
+
+$bp-small: 500px;
+$bp-medium: 800px;
+$bp-large: 1080px;
+
+// ---------------------------------------------------------
+//
+//		Miscellaneous
+//
+// ---------------------------------------------------------
 
 // Global radius
 $radius-small: 3px;
 $radius-large: 6px;
-
-// Decent starting breakpoints - Adjust/add to as needed
-$bp-small: 500px;
-$bp-medium: 800px;
-$bp-large: 1080px;

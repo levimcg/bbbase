@@ -19,16 +19,22 @@
 @import "global/utilities";
 
 /*
-**	Components
-**
-**	Modular components and reusable stuff
-**
+**	Patterns
 */
 
-// Example:
-//
+@import "patterns/forms";
+@import "patterns/buttons";
+
+
+/*
+**	Components
+**
+**	Reusable modular components the ubiquitous "Media object,
+**	for example."
+*/
+
 // @import "components/media-object";
 
 
-// Style guide code
+// Style guide CSS only!
 @import "style-guide";

@@ -3,25 +3,25 @@
   class: "u-bg-text"
   sass: "$color-base"
 
-- name: Text Subtle
+- name: Text medium
   # hex: "#b1b4b6"
-  class: "u-bg-text-subtle"
-  sass: "$color-base-middle"
+  class: "u-bg-text-medium"
+  sass: "$color-text-medium"
 
-- name: Ruler
+- name: Text light
   # hex: "#e5e5e5"
-  class: "u-bg-ruler"
-  sass: "$color-ruler"
+  class: "u-bg-text-light"
+  sass: "$color-text-light"
 
 - name: Primary
   # hex: "#3d6ebb"
   class: "u-bg-primary"
   sass: "$color-primary"
 
-- name: Primary middle
+- name: Primary medium
   # hex: "#8AA8D6"
-  class: "u-bg-primary-middle"
-  sass: "$color-primary-middle"
+  class: "u-bg-primary-medium"
+  sass: "$color-primary-medium"
 
 - name: Primary light
   # hex: "#e1e9f4"
@@ -33,10 +33,10 @@
   class: "u-bg-secondary"
   sass: "$color-secondary"
 
-- name: Secondary middle
+- name: Secondary medium
   # hex: "#f79696"
-  class: "u-bg-secondary-middle"
-  sass: "$color-secondary-middle"
+  class: "u-bg-secondary-medium"
+  sass: "$color-secondary-medium"
 
 - name: Secondary light
   # hex: "#fde4e4"

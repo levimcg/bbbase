@@ -1,5 +1,12 @@
-<aside class="sg-sidebar">
-	<h1 class="sg-site-title">{{ site.title }}</h1>
+<header class="sg-sidebar">
+	<div class="sg-intro">
+		<h1 class="sg-intro__title">{{ site.title }}</h1>
+		<span class="sg-intro__description">
+			{{ site.description | markdownify }}
+		</span>
+	</div>
+
+	<h2 class="sg-nav__group-title">Patterns</h2>
 	<nav class="sg-nav" role="navigation">
 		<ul class="sg-nav__list">
 			{% for pattern in site.patterns %}
@@ -7,4 +14,4 @@
 			{% endfor %}
 		</ul>
 	</nav>
-</aside>
+</header>
