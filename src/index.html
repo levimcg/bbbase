@@ -1,0 +1,52 @@
+---
+layout: default
+title: Home
+description: Delete this stuff and get started!
+---
+{% include sg-sidebar.html %}
+<div class="sg-patterns-wrapper">
+
+    <section class="sg-pattern-group">
+        <h1 class="sg-pattern-group__heading">Color <span style="font-weight: 300;">Swatches</span></h1>
+        <ul class="sg-swatches">
+            {% for color in site.data.colors %}
+                <li class="sg-swatches__item">
+
+                    <div class="sg-swatches__chip">
+                        <span class="sg-swatches__example {{ color.class }}" {% comment %}style="background-color: {{ color.hex }};"{% endcomment %}></span>
+                        <div class="sg-swatches__info">
+                            <dl>
+                                <dt>Name:</dt>
+                                <dd>{{ color.name }}</dd>
+                                <dt>Variable:</dt>
+                                <dd class="u-font-code">{{ color.sass }}</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                </li>
+
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section class="sg-pattern-group">
+        <h1 class="sg-pattern-group__heading">Patterns</h1>
+        <div class="sg-pattern-list">
+            {% for pattern in site.patterns %}
+                <article class="sg-pattern" id="{{ pattern.title | slugify }}">
+                    <details>
+                        <summary class="sg-pattern__title">{{ pattern.title }}</summary>
+                        <div class="sg-pattern__markup">
+                            {% highlight html linenos %}{{ pattern.content }}{% endhighlight %}
+                        </div>
+                    </details>
+                    <div class="sg-pattern__example">
+                        {{ pattern.content }}
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    </section>
+
+</div>

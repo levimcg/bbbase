@@ -1,0 +1,45 @@
+// Typography defaults
+$base-font-size: 100%;
+$base-font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+$heading-font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+
+//Font sizes
+$font-size-h1: 3.615em;
+$font-size-h2: 3.052em;
+$font-size-h3: 2.441em;
+$font-size-h4: 1.953em;
+$font-size-h5: 1.563em;
+$font-size-h6: 1.25em;
+
+// Font weights
+$font-weight-bold: 700;
+$font-weight-regular: 400;
+$font-weight-light: 300;
+
+// Colors
+$color-background: #fff;
+$color-background-subtle: mix(black, $color-background, 2%);
+$color-ruler: mix(black, $color-background, 10%);
+
+$color-text: #313b52;
+$color-text-subtle: mix(white, $color-text, 50%);
+
+$color-primary: #6291ff;
+$color-primary-middle: mix(white, $color-primary, 40%);
+$color-primary-light: mix(white, $color-primary, 85%);
+
+$color-secondary: #7ce8b3;
+$color-secondary-middle: mix(white, $color-secondary, 40%);
+$color-secondary-light: mix(white, $color-secondary, 85%);
+
+$color-link: #2b48ff;
+$color-quiet: #bbb;
+
+// Global radius
+$radius-small: 3px;
+$radius-large: 6px;
+
+// Decent starting breakpoints - Adjust/add to as needed
+$bp-small: 500px;
+$bp-medium: 800px;
+$bp-large: 1080px;

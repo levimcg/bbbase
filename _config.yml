@@ -1,0 +1,21 @@
+title: Bbbase
+description: A style guide generator using Jekyll
+
+# Makes for a cleaner file structure
+source: src/
+destination: _build
+
+# Exclude some common files and include things like .htaccess
+exclude: [README.md, node_modules, Gruntfile.js, package.json, deploy-stage, deploy-prod]
+include: [.htaccess]
+
+# Jekyll defaults
+permalink: :title
+sass:
+    sass_dir: _sass
+    style: expanded
+
+# Collections
+collections:
+    patterns:
+        output: false

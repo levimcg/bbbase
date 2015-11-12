@@ -1,0 +1,106 @@
+/*----------------------------------------------------------
+	Utilities
+	_utilities.scss
+
+	These are un-changing utility classes that use defined
+	values found in _variables.scss
+
+----------------------------------------------------------*/
+
+/*
+**	Background clor utilities
+**
+**	Utilities that will change the backgorund color of an
+**	element that they are applied to.
+*/
+
+.u-bg-text {
+	background-color: $color-text;
+}
+
+.u-bg-text-subtle {
+	background-color: $color-text-subtle;
+}
+
+.u-bg-ruler {
+	background-color: $color-ruler;
+}
+
+
+.u-bg-primary {
+	background-color: $color-primary;
+}
+
+.u-bg-primary-middle {
+	background-color: $color-primary-middle;
+}
+
+.u-bg-primary-light {
+	background-color: $color-primary-light;
+}
+
+
+.u-bg-secondary {
+	background-color: $color-secondary;
+}
+
+.u-bg-secondary-middle {
+	background-color: $color-secondary-middle;
+}
+
+.u-bg-secondary-light {
+	background-color: $color-secondary-light;
+}
+
+/*
+**	Color utilities
+**
+**	Utility classes that change the color of text, etc.
+*/
+
+.u-color-text {
+	color: $color-text;
+}
+
+.u-color-text-subtle {
+	color: $color-text-subtle;
+}
+
+.u-color-ruler {
+	color: $color-ruler;
+}
+
+
+.u-color-primary {
+	color: $color-primary;
+}
+
+.u-color-primary-middle {
+	color: $color-primary-middle;
+}
+
+.u-color-primary-light {
+	color: $color-primary-light;
+}
+
+
+.u-color-secondary {
+	color: $color-secondary;
+}
+
+.u-color-secondary-middle {
+	color: $color-secondary-middle;
+}
+
+.u-color-secondary-light {
+	color: $color-secondary-light;
+}
+
+
+/*
+**	Font utilities
+*/
+
+.u-font-code {
+	font-family: "Consolas", Courier, monospace;
+}

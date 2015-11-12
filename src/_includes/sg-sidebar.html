@@ -1,0 +1,10 @@
+<aside class="sg-sidebar">
+	<h1 class="sg-site-title">{{ site.title }}</h1>
+	<nav class="sg-nav" role="navigation">
+		<ul class="sg-nav__list">
+			{% for pattern in site.patterns %}
+				<li class="sg-nav__item"><a href="#{{ pattern.title | slugify }}">{{ pattern.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</nav>
+</aside>

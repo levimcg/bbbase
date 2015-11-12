@@ -1,0 +1,44 @@
+- name: Text
+  # hex: "#212931"
+  class: "u-bg-text"
+  sass: "$color-base"
+
+- name: Text Subtle
+  # hex: "#b1b4b6"
+  class: "u-bg-text-subtle"
+  sass: "$color-base-middle"
+
+- name: Ruler
+  # hex: "#e5e5e5"
+  class: "u-bg-ruler"
+  sass: "$color-ruler"
+
+- name: Primary
+  # hex: "#3d6ebb"
+  class: "u-bg-primary"
+  sass: "$color-primary"
+
+- name: Primary middle
+  # hex: "#8AA8D6"
+  class: "u-bg-primary-middle"
+  sass: "$color-primary-middle"
+
+- name: Primary light
+  # hex: "#e1e9f4"
+  class: "u-bg-primary-light"
+  sass: "$color-primary-light"
+
+- name: Secondary
+  # hex: "#f35151"
+  class: "u-bg-secondary"
+  sass: "$color-secondary"
+
+- name: Secondary middle
+  # hex: "#f79696"
+  class: "u-bg-secondary-middle"
+  sass: "$color-secondary-middle"
+
+- name: Secondary light
+  # hex: "#fde4e4"
+  class: "u-bg-secondary-light"
+  sass: "$color-secondary-light"
