@@ -30,7 +30,6 @@ button,
     min-height: 48px;
     padding: 1em 2em;
     text-decoration: none;
-    transition: all .3s ease;
     vertical-align: center;
 
     &:hover {
@@ -40,9 +39,12 @@ button,
 }
 
 button:focus,
+button:focus:hover,
 button:active,
+button:active:hover,
 .button:focus,
-.button:active {
+.button:active,
+.button:active:hover {
     @if $box-shadow == true {
         box-shadow: 0 3px 0 $color-text-light;
     }
