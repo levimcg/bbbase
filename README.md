@@ -1,3 +1,3 @@
-## Blanks
+## Bbbase
 
-A decent starting point for building a [Jekyll](http://jekyllrb.com/) site. This is the is boilerplate I use for starting any Jekyll sites. Along with the template files, there are a couple of nice-to-haves when you are getting up and running with Jekyll.
+A web style guide generator heavily influenced by Jeremy Keith's [Pattern Primer](https://github.com/adactio/Pattern-Primer) and Anna Debenham's [Font-end style guide](https://github.com/maban/styleguide). Bbbase is a good place to start a design project and document front-end design patterns.
