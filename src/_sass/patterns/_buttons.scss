@@ -1,9 +1,9 @@
 /*----------------------------------------------------------
-	Buttons
-	_buttons.scss
+    Buttons
+    _buttons.scss
 
-	Buttons styles for Base, Primary, and Secondary
-	buttons.
+    Buttons styles for Base, Primary, and Secondary
+    buttons.
 ----------------------------------------------------------*/
 
 // Do you want a slight shadow on the button?
@@ -42,6 +42,10 @@ button:focus,
 button:focus:hover,
 button:active,
 button:active:hover,
+input[type="submit"]:focus,
+input[type="submit"]:focus:hover,
+input[type="submit"]:active,
+input[type="submit"]:active:hover,
 .button:focus,
 .button:active,
 .button:active:hover {
@@ -59,7 +63,8 @@ button:active:hover,
     background-color: $color-primary;
     color: $color-background;
 
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: $color-primary-medium;
         @if $box-shadow == true {
             box-shadow: 0 3px 0 $color-primary-medium;
@@ -74,10 +79,27 @@ button:active:hover,
     background-color: $color-secondary;
     color: $color-background;
 
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: $color-secondary-medium;
         @if $box-shadow == true {
             box-shadow: 0 3px 0 $color-secondary-medium;
+        }
+    }
+}
+
+.button--accent {
+    @if $box-shadow == true {
+        box-shadow: 0 3px 0 $color-accent-darken;
+    }
+    background-color: $color-accent;
+    color: $color-background;
+
+    &:hover,
+    &:focus {
+        background-color: $color-accent-medium;
+        @if $box-shadow == true {
+            box-shadow: 0 3px 0 $color-accent-medium;
         }
     }
 }

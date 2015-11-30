@@ -1,6 +1,6 @@
 // ---------------------------------------------------------
 //
-//		Typography
+//        Typography
 //
 // ---------------------------------------------------------
 
@@ -24,7 +24,7 @@ $font-weight-light: 300;
 
 // ---------------------------------------------------------
 //
-//		Colors
+//        Colors
 //
 // ---------------------------------------------------------
 
@@ -46,12 +46,17 @@ $color-secondary-medium: mix(white, $color-secondary, 40%);
 $color-secondary-light: mix(white, $color-secondary, 85%);
 $color-secondary-darken: mix($color-secondary, black, 80%);
 
+$color-accent: #FF6464;
+$color-accent-medium: mix(white, $color-accent, 40%);
+$color-accent-light: mix(white, $color-accent, 85%);
+$color-accent-darken: mix($color-accent, black, 80%);
+
 $color-form-borders: mix($color-text, white, 40%);
 $color-form-borders-focus: mix($color-text, white, 85%);
 
 // ---------------------------------------------------------
 //
-//		Breakpoints
+//        Breakpoints
 //
 // ---------------------------------------------------------
 
@@ -61,7 +66,7 @@ $bp-large: 1080px;
 
 // ---------------------------------------------------------
 //
-//		Miscellaneous
+//        Miscellaneous
 //
 // ---------------------------------------------------------
 

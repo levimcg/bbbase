@@ -1,131 +1,132 @@
 /*----------------------------------------------------------
-	Style guide
-	_style-guide.scss
+    Style guide
+    _style-guide.scss
 
-	Style guide specific css. These are rules that only
-	affect the actual style guide page.
+    Style guide specific css. These are rules that only
+    affect the actual style guide page.
 
-	Prefix all classes with ".sg-" so that they are not
-	used in production code for the actual site.
+    Prefix all classes with ".sg-" so that they are not
+    used in production code for the actual site.
 ----------------------------------------------------------*/
 
 .sg-wrapper {
-	@include clear-fix;
-	height: 100%;
-	position: relative;
+    @include clear-fix;
+    height: 100%;
+    position: relative;
 }
 
 /*
-**	This is a hacky way to make a true full-height sidebar
-**	when the main content column is taller than the
-**	sidebar itself.
-**	TODO: Some sort of flex-box implementation?
+**    This is a hacky way to make a true full-height sidebar
+**    when the main content column is taller than the
+**    sidebar itself.
+**    TODO: Some sort of flex-box implementation?
 */
 
 .sg-sidebar {
-	padding: 3em 0 3em 2em;
-	float: left;
-	width: 20%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
+    padding: 3em 0 3em 2em;
+    float: left;
+    width: 23%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .sg-patterns-wrapper {
-	background-color: $color-background;
-	border-left: 1px solid $color-ruler;
-	padding-top: 3em;
-	padding-bottom: 3em;
-	float: right;
-	width: 80%;
+    background-color: $color-background;
+    border-left: 1px solid $color-ruler;
+    float: right;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    position: relative;
+    width: 77%;
 }
 
 .sg-intro {
-	padding-right: 1em;
-	margin-bottom: 4em;
+    padding-right: 1em;
+    margin-bottom: 4em;
 }
 
 .sg-intro__title {
-	color: $color-text;
-	margin-top: 0;
-	font-size: $font-size-h3;
+    color: $color-text;
+    margin-top: 0;
+    font-size: $font-size-h3;
 }
 
 .sg-intro__description {
-	color: $color-text-medium;
+    color: $color-text-medium;
 }
 
 .sg-nav__list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .sg-nav__item {
 
-	a {
-		color: $color-text;
-		display: block;
-		text-decoration: none;
-		padding: .75em;
-		border-bottom: 1px solid $color-ruler;
+    a {
+        color: $color-text;
+        display: block;
+        text-decoration: none;
+        padding: .75em;
+        border-bottom: 1px solid $color-ruler;
 
-		&:hover {
-			background-color: $color-ruler;
-		}
-	}
+        &:hover {
+            background-color: $color-ruler;
+        }
+    }
 }
 
 .sg-nav__group-title {
-	font-size: $font-size-h5;
-	font-weight: 400;
-	color: $color-text-medium;
+    font-size: $font-size-h5;
+    font-weight: 400;
+    color: $color-text-medium;
 }
 
 .sg-pattern-group {
-	padding-right: 4em;
-	padding-left: 4em;
+    padding-right: 4em;
+    padding-left: 4em;
 }
 
 .sg-pattern {
-	padding-top: 4em;
+    padding-top: 4em;
 
-	&:first-child {
-		padding-top: 0;
-	}
+    &:first-child {
+        padding-top: 0;
+    }
 }
 
 .sg-pattern-group__heading {
-	color: $color-text-medium;
-	font-size: $font-size-h5;
-	font-weight: 400;
-	margin-top: 2.75em;
-	margin-bottom: 2.5em;
+    color: $color-text-medium;
+    font-size: $font-size-h5;
+    font-weight: 400;
+    margin-top: 2.75em;
+    margin-bottom: 2.5em;
 }
 
 .sg-pattern__title {
-	background-color: $color-text-light;
-	color: $color-text;
-	border-top-right-radius: $radius-small;
-	border-top-left-radius: $radius-small;
-	padding: .25em .5em;
+    background-color: $color-text-light;
+    color: $color-text;
+    border-top-right-radius: $radius-small;
+    border-top-left-radius: $radius-small;
+    padding: .25em .5em;
 
-	&:hover {
-		cursor: pointer;
-		background-color: $color-ruler;
-	}
+    &:hover {
+        cursor: pointer;
+        background-color: $color-ruler;
+    }
 
-	&:focus {
-		outline: none;
-	}
+    &:focus {
+        outline: none;
+    }
 }
 
 .sg-pattern__markup {
-	background-color: $color-background-subtle;
-	padding: 1em;
-	border-right: 1px solid $color-ruler;
-	border-left: 1px solid $color-ruler;
+    background-color: $color-background-subtle;
+    padding: 1em;
+    border-right: 1px solid $color-ruler;
+    border-left: 1px solid $color-ruler;
 }
 
 /*
@@ -135,89 +136,103 @@
 .sg-pattern__markup  .lineno {
     color: #ccc;
     display: inline-block;
-	margin-right: 1em;
-	margin-left: 1em;
+    margin-right: 1em;
+    // margin-left: 1em;
     padding-right: .4em;
     border-right: 1px solid $color-ruler;
 }
 
 .sg-pattern__example {
-	padding: 1.35em 1em;
-	background-color: $color-background;
-	border: 1px solid $color-ruler;
-	border-bottom-right-radius: $radius-small;
-	border-bottom-left-radius: $radius-small;
+    padding: 1.35em 1em;
+    background-color: $color-background;
+    border: 1px solid $color-ruler;
+    border-bottom-right-radius: $radius-small;
+    border-bottom-left-radius: $radius-small;
 }
 
 /*
-**	We'll get rid of the top and bottom margin on all the
-**	example headings here for presentation purposes.
+**    We'll get rid of the top and bottom margin on all the
+**    example headings here for presentation purposes.
 */
 
 .sg-pattern__example  {
 
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		margin-top: 0;
-		margin-bottom: 0;
-	}
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
 }
 
 .sg-swatches {
-	@include clear-fix;
-	list-style: none;
-	padding: 0;
-	margin: 0 -1.5em;
+    @include clear-fix;
+    list-style: none;
+    padding: 0;
+    margin: 0 -1.5em;
 }
 
 .sg-swatches__item {
-	float: left;
-	margin-bottom: 1em;
-	width: 33.3333%;
-	padding-right: 1.5em;
-	padding-bottom: 2em;
-	padding-left: 1.5em;
+    float: left;
+    margin-bottom: 1em;
+    width: 33.3333%;
+    padding-right: 1.5em;
+    padding-bottom: 2em;
+    padding-left: 1.5em;
 }
 
 .sg-swatches__chip {
-	border: 1px solid $color-ruler;
-	@include border-radius($radius-small);
-	overflow: hidden;
+    border: 1px solid $color-ruler;
+    @include border-radius($radius-small);
+    overflow: hidden;
 }
 
 .sg-swatches__example {
-	display: block;
-	min-height: 100px;
+    display: block;
+    min-height: 100px;
 }
 
 .sg-swatches__info {
-	background-color: $color-background;
-	border-top: 1px solid $color-ruler;
-	padding: .75em;
+    background-color: $color-background;
+    border-top: 1px solid $color-ruler;
+    padding: .75em;
 
-	dl,
-	dl dd {
-		margin: 0;
-	}
+    dl,
+    dl dd {
+        margin: 0;
+    }
 
-	dt {
-		color: $color-text-medium;
-		font-size: .875em;
-		line-height: 1;
-		text-transform: uppercase;
-	}
+    dt {
+        color: $color-text-medium;
+        font-size: .875em;
+        line-height: 1;
+        text-transform: uppercase;
+    }
 
-	dl dd {
-		margin-bottom: .5em;
+    dl dd {
+        margin-bottom: .5em;
 
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+.sg-phone-home {
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    text-decoration: none;
+    color: $color-background;
+    background-color: transparentize($color-primary, .25);
+    padding: .5em 2em;
+    border-top-left-radius: $radius-small;
 
 }

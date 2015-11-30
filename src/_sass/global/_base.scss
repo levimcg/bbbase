@@ -1,7 +1,8 @@
 /*----------------------------------------------------------
-
     Base styles
+    _base.scss
 
+    These are the base styles for regular HTML elements
 ----------------------------------------------------------*/
 
 html,
@@ -95,4 +96,78 @@ h5 {
 
 h6 {
     font-size: $font-size-h6;
+}
+
+abbr,
+abbr[title] {
+    border: none;
+}
+
+small {
+    color: $color-text-medium;
+}
+
+figure {
+    margin: 0;
+}
+
+blockquote {
+    margin: 0;
+    font-size: $font-size-h4;
+    font-style: italic;
+
+    &:before {
+        content: "“";
+    }
+
+    &:after {
+        content: "”";
+    }
+}
+
+figcaption {
+    color: $color-text-medium;
+    margin-top: 1em;
+}
+
+time {
+    font-style: italic;
+}
+
+dl dt {
+    margin-top: .75em;
+
+    &:first-of-type {
+        margin-top: 0;
+    }
+}
+
+dl dd {
+    margin-left: 1.5em;
+}
+
+table {
+    text-align: left;
+    width: 100%;
+
+    thead {
+        background-color: $color-background-subtle;
+    }
+
+    th,
+    td {
+        padding: .5em;
+    }
+
+    tr {
+        border-bottom: 1px solid $color-ruler;
+    }
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid $color-ruler;
+    display: block;
+    padding: .5em 0
 }

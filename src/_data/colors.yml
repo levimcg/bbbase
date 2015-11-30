@@ -42,3 +42,18 @@
   # hex: "#fde4e4"
   class: "u-bg-secondary-light"
   sass: "$color-secondary-light"
+
+- name: Accent
+  # hex: "#f35151"
+  class: "u-bg-accent"
+  sass: "$color-accent"
+
+- name: Accent medium
+  # hex: "#f79696"
+  class: "u-bg-accent-medium"
+  sass: "$color-accent-medium"
+
+- name: Accent light
+  # hex: "#fde4e4"
+  class: "u-bg-accent-light"
+  sass: "$color-accent-light"
