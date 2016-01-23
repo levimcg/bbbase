@@ -3,10 +3,10 @@ layout: default
 title: Home
 ---
 {% include sg-sidebar.html %}
-<div class="sg-patterns-wrapper">
+<div class="sg-entry-wrapper">
 
-    <section class="sg-pattern-group">
-        <h1 class="sg-pattern-group__heading">Colors</h1>
+    <section class="sg-entry-group">
+        <h1 class="sg-entry-group__heading">Colors</h1>
         <ul class="sg-swatches">
             {% for color in site.data.colors %}
                 <li class="sg-swatches__item">
@@ -29,18 +29,56 @@ title: Home
         </ul>
     </section>
 
-    <section class="sg-pattern-group">
-        <h1 class="sg-pattern-group__heading">Patterns</h1>
-        <div class="sg-pattern-list">
-            {% for pattern in site.patterns %}
-                <article class="sg-pattern" id="{{ pattern.title | slugify }}">
+    <section class="sg-entry-group">
+        <h1 class="sg-entry-group__heading">Elements</h1>
+        <div class="sg-entry-list">
+            {% for element in site.elements %}
+                <article class="sg-entry" id="{{ element.title | slugify }}">
                     <details>
-                        <summary class="sg-pattern__title">{{ pattern.title }}</summary>
-                        <div class="sg-pattern__markup">
+                        <summary class="sg-entry__title">{{ element.title }}</summary>
+                        <div class="sg-entry__markup">
+                            {% highlight html linenos %}{{ element.content }}{% endhighlight %}
+                        </div>
+                    </details>
+                    <div class="sg-entry__example">
+                        {{ element.content }}
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="sg-entry-group">
+        <h1 class="sg-entry-group__heading">Forms</h1>
+        <div class="sg-entry-list">
+            {% for form in site.forms %}
+                <article class="sg-entry" id="{{ form.title | slugify }}">
+                    <details>
+                        <summary class="sg-entry__title">{{ form.title }}</summary>
+                        <div class="sg-entry__markup">
+                            {% highlight html linenos %}{{ form.content }}{% endhighlight %}
+                        </div>
+                    </details>
+                    <div class="sg-entry__example">
+                        {{ form.content }}
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="sg-entry-group">
+        <h1 class="sg-entry-group__heading">Patterns</h1>
+        <div class="sg-entry-list">
+            {% for pattern in site.patterns %}
+                <article class="sg-entry" id="{{ form.title | slugify }}">
+                    <details>
+                        <summary class="sg-entry__title">{{ pattern.title }}</summary>
+                        <div class="sg-entry__markup">
                             {% highlight html linenos %}{{ pattern.content }}{% endhighlight %}
                         </div>
                     </details>
-                    <div class="sg-pattern__example">
+                    <div class="sg-entry__example">
                         {{ pattern.content }}
                     </div>
                 </article>

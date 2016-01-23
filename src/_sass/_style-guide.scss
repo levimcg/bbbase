@@ -25,21 +25,23 @@
 .sg-sidebar {
     padding: 3em 0 3em 2em;
     float: left;
-    width: 23%;
+    width: 25%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    overflow: scroll;
+    position: fixed;
 }
 
-.sg-patterns-wrapper {
+.sg-entry-wrapper {
     background-color: $color-background;
     border-left: 1px solid $color-ruler;
     float: right;
     padding-top: 3em;
     padding-bottom: 3em;
     position: relative;
-    width: 77%;
+    width: 75%;
 }
 
 .sg-intro {
@@ -51,10 +53,12 @@
     color: $color-text;
     margin-top: 0;
     font-size: $font-size-h3;
+    letter-spacing: -.05em;
 }
 
 .sg-intro__description {
     color: $color-text-medium;
+    font-size: .875em;
 }
 
 .sg-nav__list {
@@ -66,7 +70,7 @@
 .sg-nav__item {
 
     a {
-        color: $color-text;
+        color: $color-text-medium;
         display: block;
         text-decoration: none;
         padding: .75em;
@@ -81,15 +85,14 @@
 .sg-nav__group-title {
     font-size: $font-size-h5;
     font-weight: 400;
-    color: $color-text-medium;
 }
 
-.sg-pattern-group {
+.sg-entry-group {
     padding-right: 4em;
     padding-left: 4em;
 }
 
-.sg-pattern {
+.sg-entry {
     padding-top: 4em;
 
     &:first-child {
@@ -97,15 +100,14 @@
     }
 }
 
-.sg-pattern-group__heading {
-    color: $color-text-medium;
+.sg-entry-group__heading {
     font-size: $font-size-h5;
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 2.75em;
     margin-bottom: 2.5em;
 }
 
-.sg-pattern__title {
+.sg-entry__title {
     background-color: $color-text-light;
     color: $color-text;
     border-top-right-radius: $radius-small;
@@ -122,7 +124,7 @@
     }
 }
 
-.sg-pattern__markup {
+.sg-entry__markup {
     background-color: $color-background-subtle;
     padding: 1em;
     border-right: 1px solid $color-ruler;
@@ -133,7 +135,7 @@
 **  Line numbers on code highlighting
 */
 
-.sg-pattern__markup  .lineno {
+.sg-entry__markup  .lineno {
     color: #ccc;
     display: inline-block;
     margin-right: 1em;
@@ -142,7 +144,7 @@
     border-right: 1px solid $color-ruler;
 }
 
-.sg-pattern__example {
+.sg-entry__example {
     padding: 1.35em 1em;
     background-color: $color-background;
     border: 1px solid $color-ruler;
@@ -155,7 +157,7 @@
 **    example headings here for presentation purposes.
 */
 
-.sg-pattern__example  {
+.sg-entry__example  {
 
     h1,
     h2,
@@ -231,7 +233,7 @@
     text-align: right;
     text-decoration: none;
     color: $color-background;
-    background-color: transparentize($color-primary, .25);
+    background-color: transparentize($color-secondary, .25);
     padding: .5em 2em;
     border-top-left-radius: $radius-small;
 
