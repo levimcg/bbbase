@@ -6,6 +6,24 @@
 		</span>
 	</div>
 
+    <h2 class="sg-nav__group-title">Elements</h2>
+	<nav class="sg-nav" role="navigation">
+		<ul class="sg-nav__list">
+			{% for element in site.elements %}
+				<li class="sg-nav__item"><a href="#{{ element.title | slugify }}">{{ element.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</nav>
+
+    <h2 class="sg-nav__group-title">Forms</h2>
+	<nav class="sg-nav" role="navigation">
+		<ul class="sg-nav__list">
+			{% for form in site.forms %}
+				<li class="sg-nav__item"><a href="#{{ form.title | slugify }}">{{ form.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</nav>
+
 	<h2 class="sg-nav__group-title">Patterns</h2>
 	<nav class="sg-nav" role="navigation">
 		<ul class="sg-nav__list">
