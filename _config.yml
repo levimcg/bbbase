@@ -17,5 +17,9 @@ sass:
 
 # Collections
 collections:
+    elements:
+        output: false
+    forms:
+        output: false
     patterns:
         output: false
